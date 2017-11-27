@@ -4,14 +4,6 @@ angular.module('starter')
   ///////////
   .factory('drinkList', function() {
 
-    //This script provides a list of drinks for use in the app
-
-    //drink_name: The drink being drunk (e.g. cider or beer)
-    //abv: the abv of the drink
-    //units: The unit of drinks
-    //drink_measure: Pint, Half, Single, Double
-    //group_id: the name attr value, has to be length of options
-
     var drinks = [{ //Default Drink
         drink_name: 'Default',
         abv: 4,

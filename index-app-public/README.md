@@ -1,6 +1,6 @@
 # InDEx App - Public Release (v1.0.0)
 
-InDEx is a software package for reporting and monitoring alcohol consumption via a smartphone application. Consumption of alcohol is self-reported by the user, and the app provides a visual representation of drinking behaviour and offers feedback on consumption levels compared to the general population. The app was developed by [Dr Daniel Leightley](https://www.leightley.com) of the [King's Centre for Military Health Research](https://www.kcl.ac.uk/kcmhr/index.aspx).
+InDEx is a software package for reporting and monitoring alcohol consumption via a smartphone application. Consumption of alcohol is self-reported by the user, with the app providing a visual representation of drinking behaviour and consumption levels compared to the general population. The app was developed by [Dr Daniel Leightley](https://www.leightley.com) of the [King's Centre for Military Health Research](https://www.kcl.ac.uk/kcmhr/index.aspx) funded by a [Medical Research Council](https://www.mrc.ac.uk/) Grant led by [Dr Laura Goodwin](https://www.liverpool.ac.uk/psychology-health-and-society/staff/laura-goodwin/) and [Professor Nicola Fear](https://kclpure.kcl.ac.uk/portal/nicola.t.fear.html).
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ InDEx is a software package for reporting and monitoring alcohol consumption via
 
 ## License
 
-The InDEx app has been released under [GNU General Public License (v3)](https://www.gnu.org/licenses/gpl-3.0.en.html) license to promote open source app development and sharing of innovation within the research community.
+The InDEx app has been released under [GNU General Public License (v3)](https://www.gnu.org/licenses/gpl-3.0.en.html) license to promote open source app development and sharing of innovation within the research community. Simply, use freely but make your software accessible to others.
 
 ## Publication
 
@@ -36,7 +36,7 @@ NOTE: Manuscript currently under review.
 * Clone this repository: `git clone https://github.com/DrDanL/index-app-public.git`.
 * Run `npm install` from the project root.
 * Run `ionic serve` in a terminal from the project root.
-* Enoy. :beers:
+* Enjoy. :beers:
 
 _Note: You may need to add “sudo” in front of any global commands to install the utilities._
 

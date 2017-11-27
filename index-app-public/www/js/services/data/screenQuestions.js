@@ -4,13 +4,6 @@ angular.module('starter')
   ///////////
   .factory('screenQuestions', function() {
 
-    //question: The question to be asked
-    //options: The options for the user. Can be number or string
-    //values: The values assigned to the options (can be string or numbers)
-    //type_id: the name attr value, has to be length of options
-    //num_response: the number of responses allowed
-    //Display type: 1 input boxes, 2 wheel, 3
-
     //Screening Questions (not ordered)
     var questions = [{ //AUDIT Full
         question: "How often do you have a drink containing alcohol?",

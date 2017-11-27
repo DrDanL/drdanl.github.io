@@ -3,8 +3,7 @@ angular.module('starter')
 
     //Destory User Credentials
     function destroyUserCredentials() {
-      //All of this is a bit of overkill but for some reason across
-      //Android and iOS it ticks all the boxes.
+
       isAuthenticated = false;
 
       GlobalStore.clearStorage();

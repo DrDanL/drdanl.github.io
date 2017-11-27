@@ -14,7 +14,7 @@ angular.module('starter')
       return appModalService.show('templates/addDrinks/addDrinks.template.html', 'addDrinksCtrl as vm', drinks);
     };
 
-    //Display the Add Drinks Page
+    //Display the Show Goals Page
     function showSetGoals(goalData) {
       return appModalService.show('templates/goals/setGoals.template.html', 'setGoalsCtrl as vm', goalData);
     };

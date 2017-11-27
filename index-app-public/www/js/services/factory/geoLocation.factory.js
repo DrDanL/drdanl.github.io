@@ -1,5 +1,5 @@
 angular.module('starter')
-  //This function calls the $cordovaGeolocation GPs locator and provides the results to the front-end
+  //This function calls the $cordovaGeolocation GPS locator and provides the results to the front-end
   .factory('GeoService', function($q, $ionicPlatform, $cordovaGeolocation, GlobalStore, $rootScope) {
 
     function getPosition() {

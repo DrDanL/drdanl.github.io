@@ -5,7 +5,6 @@ angular.module('starter')
   .factory('barrierQuestions', function() {
 
     var barriers = [
-      //GOAL 1
       {
         question: null,
         options: null,
