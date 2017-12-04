@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FAQ</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-card-header text-wrap (click)="expandElement(0)">
+      What is a "breach" and where has the data come from?
+    </ion-card-header>
+
+    <ion-card-content *ngIf="questionElements[0]">
+      A "breach" is an incident where a hacker illegally obtains data from a vulnerable system, usually by exploiting weaknesses in the software.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header text-wrap (click)="expandElement(1)">
+      What is a "paste" and why include it on this site?
+    </ion-card-header>
+
+    <ion-card-content *ngIf="questionElements[1]">
+      A "paste" is information that has been "pasted" to a publicly facing website designed to share content. These services are favoured by hackers due to the ease of anonymously sharing information and they're frequently the first place a breach appears.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header text-wrap (click)="expandElement(2)">
+      My email was not found — does that mean I'm OK?
+    </ion-card-header>
+
+    <ion-card-content *ngIf="questionElements[2]">
+      Whilst the Have I Been Pwned? service is kept up to date with as much data as possible, it contains but a small subset of all the records that have been breached over the years. Many breaches never result in the public release of data and indeed many
+      breaches even go entirely undetected. "Absence of evidence is not evidence of absence" or in other words, just because your email address wasn't found here doesn't mean that is hasn't been compromised in another breach.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header text-wrap (click)="expandElement(3)">
+      What is a "sensitive breach"?
+    </ion-card-header>
+
+    <ion-card-content *ngIf="questionElements[3]">
+      Have I Been Pwned? and Pwned?  enables you to discover if your account was exposed in most of the data breaches by directly searching the system. However, certain breaches are particularly sensitive in that someone's presence in the breach may
+      adversely impact them if others are able to find that they were a member of the site. These breaches are classed as "sensitive" and may not be publicly searched. A sensitive data breach can only be searched by the verified owner of the email address
+      being searched for via the <a href="https://haveibeenpwned.com/">Have I Been Pwned?</a> website.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header text-wrap (click)="expandElement(4)">
+      What is an "unverified" breach?
+    </ion-card-header>
+
+    <ion-card-content *ngIf="questionElements[4]">
+      Some breaches may be flagged as "unverified". In these cases, whilst there is legitimate data within the alleged breach, it may not have been possible to establish legitimacy beyond reasonable doubt. Unverified breaches are still included in the system
+      because regardless of their legitimacy, they still contain personal information about individuals who want to understand their exposure on the web.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header text-wrap (click)="expandElement(5)">
+      What is a "fabricated" breach?
+    </ion-card-header>
+
+    <ion-card-content *ngIf="questionElements[5]">
+      Some breaches may be flagged as "fabricated". In these cases, it is highly unlikely that the breach contains legitimate data sourced from the alleged site but it may still be sold or traded under the auspices of legitimacy. Often these incidents are comprised
+      of data aggregated from other locations (or may be entirely fabricated), yet still contain actual email addresses of unbeknownst to the account holder. Fabricated breaches are still included in the system because regardless of their legitimacy,
+      they still contain personal information about individuals who want to understand their exposure on the web.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header text-wrap (click)="expandElement(6)">
+      I want to know more about Have I Been Pwned?
+    </ion-card-header>
+
+    <ion-card-content *ngIf="questionElements[6]">
+      <a href="https://haveibeenpwned.com/">Have I Been Pwned?</a> has been extensively documented on <a href="https://www.troyhunt.com">troyhunt.com</a> under the Have I been pwned? tag.
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

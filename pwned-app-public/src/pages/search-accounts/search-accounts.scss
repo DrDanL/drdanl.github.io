@@ -1,0 +1,43 @@
+page-search {
+  h2 {
+    padding-top: 2%;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .keyText {
+    text-align: center;
+  }
+
+  .loadText {
+    text-align: center;
+  }
+
+  .searchSafe {
+    text-align: center;
+    font-size: 1.2em;
+    color: color($colors, secondary);
+    padding-top: 5%;
+  }
+
+  .breachTitle {
+    text-align: left;
+    font-weight: bolder;
+  }
+
+  .breachImage {
+    background-color: color($colors, primary);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .pasteDisplay span {
+    font-weight: bolder;
+  }
+
+  ion-row {
+    border-top: 1px black solid;
+  }
+}

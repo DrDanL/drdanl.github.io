@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="row pdam-row">
+    <div class="col col-style text-center">
+      <h2>{{breachAccountCount | number}}</h2>
+      <h5>Pwned accounts</h5></div>
+    <div class="col col-style text-center">
+      <h2>{{breachCount | number}}</h2>
+      <h5>Breaches</h5></div>
+  </div>
+
+  <ion-card>
+    <h2>Breach in Focus</h2>
+    <img src="https://haveibeenpwned.com/Content/Images/PwnedLogos/{{randomBreach.Name}}.{{randomBreach.LogoType}}" alt="{{randomBreach.Title}}" class="breachImage">
+    <ion-card-content>
+      <ion-card-title>
+        {{randomBreach.Title}}
+      </ion-card-title>
+      <div [innerHTML]="randomBreach.Description" class="breachDesc"></div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="topTip">
+    <ion-card-header>
+      <span>Top Tip:</span> Watch your back
+    </ion-card-header>
+
+    <ion-card-content>
+      Whenever you're about to post something online, pause and just imagine someone in authority, someone you respect, reading that post or looking at that photo. If that feels uncomfortable, don't do it.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

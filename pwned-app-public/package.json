@@ -1,0 +1,76 @@
+{
+  "name": "pwned-data-breach-app",
+  "version": "0.0.7",
+  "description": "An app to allow you to search to see if your email address has been compromised. Powered by Have I Been Pwned?",
+  "license": "GNU-3.0",
+  "author": {
+    "name": "Daniel Leightley",
+    "email": "dleightley@ieee.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drdanl/pwned-app-public.git"
+  },
+  "dependencies": {
+    "@angular/common": "4.4.4",
+    "@angular/compiler": "4.4.4",
+    "@angular/compiler-cli": "4.4.4",
+    "@angular/core": "4.4.4",
+    "@angular/forms": "4.4.4",
+    "@angular/http": "4.4.4",
+    "@angular/platform-browser": "4.4.4",
+    "@angular/platform-browser-dynamic": "4.4.4",
+    "@ionic-native/app-rate": "^4.3.3",
+    "@ionic-native/core": "^4.3.1",
+    "@ionic-native/in-app-browser": "^4.3.1",
+    "@ionic-native/splash-screen": "^4.3.1",
+    "@ionic-native/status-bar": "^4.3.1",
+    "@ionic/storage": "^2.0.1",
+    "cordova-android": "~6.3.0",
+    "cordova-plugin-apprate": "^1.3.0",
+    "cordova-plugin-crosswalk-webview": "^2.3.0",
+    "cordova-plugin-device": "^1.1.6",
+    "cordova-plugin-dialogs": "^1.3.3",
+    "cordova-plugin-globalization": "^1.0.7",
+    "cordova-plugin-inappbrowser": "^1.7.1",
+    "cordova-plugin-ionic-keyboard": "^2.0.4",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-statusbar": "^2.2.3",
+    "cordova-plugin-whitelist": "^1.3.2",
+    "ionic-angular": "nightly",
+    "ionicons": "3.0.0",
+    "rxjs": "^5.5.2",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "nightly",
+    "typescript": "~2.3.2"
+  },
+  "config": {
+    "ionic_aot_write_to_disk": true
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-crosswalk-webview": {
+        "XWALK_VERSION": "22+",
+        "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+        "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+        "XWALK_MODE": "embedded",
+        "XWALK_MULTIPLEAPK": "true"
+      },
+      "cordova-plugin-device": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-apprate": {}
+    }
+  }
+}

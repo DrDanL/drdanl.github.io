@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Search Breaches</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div padding>
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <ion-icon name="search"></ion-icon>
+        </ion-label>
+        <ion-input type="text" placeholder="Enter a email or username" [(ngModel)]="searchTerm" name="searchTerm" type="text" clearInput></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button full color="secondary" (click)="searchAccount()">Search have I been pwned?</button>
+  </div>
+
+  <!-- User has no breaches -->
+  <div [hidden]="!noBreaches" class="searchSafe" padding>
+    <h2>Good news! {{searchedTerm}} has not been found in any public data breaches!</h2>
+  </div>
+
+  <!-- The users breaches -->
+  <div [hidden]="!showBreachList">
+    <h2>Oh no... {{breachAccountData.length}} breaches found for {{searchedTerm}}</h2>
+    <ion-grid>
+      <ion-row *ngFor="let b of breachAccountData; let i = index" (click)="getBreachInfo(breachAccountData[i])">
+        <ion-col col-2>
+          <img src="https://haveibeenpwned.com/Content/Images/PwnedLogos/{{b.Name}}.{{b.LogoType}}" alt="{{b.Title}}" class="breachImage">
+        </ion-col>
+        <ion-col col-9>
+          <div class="breachTitle">{{b.Title}}</div>
+          <div>{{b.Domain}}</div>
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon name="information-circle"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- User has no pastes -->
+  <div [hidden]="!noPastes" class="searchSafe" padding>
+    <h2>Good news! {{searchedTerm}} has not been found in any public pastes!</h2>
+  </div>
+
+  <!-- The users pastes -->
+  <div [hidden]="!showPasteList" class="pasteDisplay">
+    <h2>Yikes... {{pasteAccountData.length}} pastes found for {{searchedTerm}}</h2>
+    <ion-grid>
+      <ion-row *ngFor="let b of pasteAccountData; let i = index">
+        <ion-col col-11>
+          <div><span>Source:</span> {{b.Source}}</div>
+          <div><span>Title:</span> {{b.Title}}</div>
+          <div><span>e-mails:</span> {{b.EmailCount}}</div>
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon name="information-circle"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- All breaches list -->
+  <div [hidden]="hideAllBreaches">
+
+    <!-- Display a message if the array is empty -->
+    <div class="loadText" *ngIf="breachDataList.length == 0">
+      You need an active internet connection to download the list of data breaches! Swipe down again...
+    </div>
+
+    <h2>All Breaches ({{breachDataList.length}})</h2>
+
+    <div [hidden]="!noBreaches" class="searchSafe">
+      <h2>Good news! {{searchedTerm}} has not been found in any public data breaches or pastes!</h2>
+    </div>
+
+    <div class="keyText">
+      <ion-icon name="md-nuclear"> sensitive</ion-icon> |
+      <ion-icon name="md-alert"> fabricated</ion-icon> |
+      <ion-icon name="md-return-right"> retired</ion-icon>
+    </div>
+
+    <ion-grid>
+      <ion-row *ngFor="let b of breachDataList; let i = index" (click)="getBreachInfo(breachDataList[i])">
+        <ion-col col-2>
+          <img src="https://haveibeenpwned.com/Content/Images/PwnedLogos/{{b.Name}}.{{b.LogoType}}" alt="{{b.Title}}" class="breachImage">
+        </ion-col>
+        <ion-col col-9>
+          <div class="breachTitle">{{b.Title}}</div>
+          <div>{{b.Domain}}</div>
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon *ngIf="b.IsSensitive" name="md-nuclear"></ion-icon>
+          <ion-icon *ngIf="b.IsFabricated" name="md-alert"></ion-icon>
+          <ion-icon *ngIf="b.IsRetired" name="md-return-right"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
