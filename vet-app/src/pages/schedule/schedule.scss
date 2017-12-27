@@ -1,0 +1,22 @@
+$categories: (
+ refreshments: #3BC7C4,
+ morning: #69BB7B,
+ registration: #FED035,
+ lunch: #FD8B2D,
+ afternoon: #FE4C52,
+ closing: #8E8D93,
+ drinks: #AC282B,
+);
+
+@function auxiliary-categories() {
+  @return map-remove($categories);
+}
+
+page-schedule {
+  @each $track, $value in auxiliary-categories() {
+   ion-item-sliding[track=#{$track}] ion-label {
+     border-left: 2px solid $value;
+     padding-left: 10px;
+   }
+  }
+}

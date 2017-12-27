@@ -1,0 +1,324 @@
+{
+  "conferenceData": [{
+    "version": 1,
+    "date": "15-03-2018",
+    "city": "London",
+    "logoURL": "",
+    "title": "Veterans' Mental Health - From Enlistment to Retirement",
+    "summary": "The King's Centre for Military Health Research is delighted to announce that we are now taking ticket bookings for the 2018 Veterans' Mental Health Conference: From Enlistment to Retirement. Hot on the heels of last year's successful event, we are excited to once again bring together academics, charities and policymakers with an interest in the field to network and to hear the latest research from speakers of world-class reputation from across leading UK and international institutions.",
+    "hashtag": "kcmhr"
+  }],
+
+  "schedule": [{
+    "date": "2018-03-15",
+    "groups": [{
+      "time": "9:30 am",
+      "sessions": [{
+        "name": "Registration & Refreshments",
+        "timeStart": "9:30 am",
+        "timeEnd": "10:00 am",
+        "location": "The Great Hall Hallway",
+        "tracks": ["Refreshments", "Registration"],
+        "id": "1"
+      }]
+    }, {
+      "time": "10:00 am",
+      "sessions": [{
+        "name": "Welcome to the conference",
+        "location": "The Great Hall",
+        "description": "Professor Sir Simon Wessely and Minister for Defence Veterans, Reserves and Personnel",
+        "speakerNames": ["Simon Wessely"],
+        "timeStart": "10:00 am",
+        "timeEnd": "10:30 am",
+        "tracks": ["Morning"],
+        "id": "2"
+      }, {
+        "name": "Defence People Mental Health and Wellbeing Strategy – An update",
+        "location": "The Great Hall",
+        "description": "Helen Helliwell – Defence People Mental Health and Wellbeing Strategy – An update",
+        "speakerNames": ["Helen Helliwell"],
+        "timeStart": "10:30 am",
+        "timeEnd": "11:00 am",
+        "tracks": ["Morning"],
+        "id": "3"
+      }, {
+        "name": "The King’s Centre for Military Health Research – what the current data shows",
+        "location": "The Great Hall",
+        "description": "Prof Nicola Fear – The King’s Centre for Military Health Research – what the current data shows",
+        "speakerNames": ["Nicola Fear"],
+        "timeStart": "11:00 am",
+        "timeEnd": "11:30 am",
+        "tracks": ["Morning"],
+        "id": "4"
+      }, {
+        "name": "Veteran transitions",
+        "location": "The Great Hall",
+        "description": "Prof Carl Castro – Veteran transitions",
+        "speakerNames": ["Carl Castro"],
+        "timeStart": "11:30 am",
+        "timeEnd": "12:00 am",
+        "tracks": ["Morning"],
+        "id": "5"
+      }]
+    }, {
+      "time": "12:00 pm",
+      "sessions": [{
+        "name": "Lunch",
+        "location": "Auditorium",
+        "description": "Come grab lunch with all the HCM folk and talk all things military health",
+        "timeStart": "12:00 pm",
+        "timeEnd": "1:00 pm",
+        "tracks": ["Lunch"],
+        "id": "6"
+      }]
+    }, {
+      "time": "1:00 pm",
+      "sessions": [{
+        "name": "Update from Forces in Mind Trust",
+        "location": "The Great Hall",
+        "description": "Ray Lock – Update from Forces in Mind Trust ",
+        "speakerNames": ["Ray Lock"],
+        "timeStart": "1:00 pm",
+        "timeEnd": "1:10 pm",
+        "tracks": ["Afternoon"],
+        "id": "7"
+      }, {
+        "name": "The Mental Health of Veterans in Northern Ireland",
+        "location": "The Great Hall",
+        "description": "Dr Cheri Armour – The Mental Health of Veterans in Northern Ireland",
+        "speakerNames": ["Cheri Armour"],
+        "timeStart": "1:10 pm",
+        "timeEnd": "1:40 pm",
+        "tracks": ["Afternoon"],
+        "id": "8"
+      }, {
+        "name": "Exploring the feasibility of offering remote access therapy for veterans with PTSD",
+        "location": "The Great Hall",
+        "description": "Dr Dominic Murphy – Exploring the feasibility of offering remote access therapy for veterans with PTSD",
+        "speakerNames": ["Dominic Murphy"],
+        "timeStart": "1:40 pm",
+        "timeEnd": "2:10 pm",
+        "tracks": ["Afternoon"],
+        "id": "9"
+      }, {
+        "name": "Traumatic brain injury",
+        "location": "The Great Hall",
+        "description": "General Peter Chiarelli – Traumatic brain injury",
+        "speakerNames": ["Peter Chiarelli"],
+        "timeStart": "2:10 pm",
+        "timeEnd": "2:40 pm",
+        "tracks": ["Afternoon"],
+        "id": "10"
+      }, {
+        "name": "A resilience intervention for military recruits",
+        "location": "The Great Hall",
+        "description": "Lt Col Norman Jones – A resilience intervention for military recruits",
+        "speakerNames": ["Norman Jones"],
+        "timeStart": "2:40 pm",
+        "timeEnd": "3:10 pm",
+        "tracks": ["Afternoon"],
+        "id": "11"
+      }]
+    }, {
+      "time": "3:10 pm",
+      "sessions": [{
+        "name": "Refreshments",
+        "location": "Auditorium",
+        "description": "Come grab lunch with all the HCM folk and talk all things military health",
+        "timeStart": "3:10 pm",
+        "timeEnd": "3:40 pm",
+        "tracks": ["Refreshments"],
+        "id": "12"
+      }]
+    }, {
+      "time": "3:40 pm",
+      "sessions": [{
+          "name": "Stigma and barriers to care in service leavers with mental health problems",
+          "location": "The Great Hall",
+          "description": "Dr Sharon Stevelink – Stigma and barriers to care in service leavers with mental health problems",
+          "speakerNames": ["Sharon Stevelink"],
+          "timeStart": "3:40 pm",
+          "timeEnd": "4:05 pm",
+          "tracks": ["Afternoon"],
+          "id": "13"
+        }, {
+          "name": "Employment",
+          "location": "The Great Hall",
+          "description": "Dr Howard Burdett – Employment ",
+          "speakerNames": ["Howard Burdett"],
+          "timeStart": "4:05 pm",
+          "timeEnd": "4:30 pm",
+          "tracks": ["Afternoon"],
+          "id": "14"
+        }, {
+          "name": "Impact of military service later in life ",
+          "location": "The Great Hall",
+          "description": "Dr Victoria Williamson – Impact of military service later in life",
+          "speakerNames": ["Victoria Williamson"],
+          "timeStart": "4:30 pm",
+          "timeEnd": "4:55 pm",
+          "tracks": ["Afternoon"],
+          "id": "15"
+        }, {
+          "name": "Dementia",
+          "location": "The Great Hall",
+          "description": "Dr Karla Greenberg - Dementia ",
+          "speakerNames": ["Karla Greenberg"],
+          "timeStart": "4:55 pm",
+          "timeEnd": "5:20 pm",
+          "tracks": ["Afternoon"],
+          "id": "16"
+        },
+        {
+          "name": "The End of the Day",
+          "location": "The Great Hall",
+          "description": "The End of the Day Professor Neil Greenberg, Royal College of Psychiatrists Lead for Military and Veterans’ Health",
+          "speakerNames": ["Neil Greenberg"],
+          "timeStart": "5:20 pm",
+          "timeEnd": "5:30 pm",
+          "tracks": ["Closing"],
+          "id": "17"
+        }
+      ]
+    }, {
+      "time": "5:30 pm",
+      "sessions": [{
+        "name": "Reception & Networking",
+        "location": "Auditorium",
+        "description": "Reception & Networking",
+        "timeStart": "5:30 pm",
+        "timeEnd": "7:00 pm",
+        "tracks": ["Drinks"],
+        "id": "18"
+      }]
+    }]
+  }],
+
+  "speakers": [{
+    "name": "Simon Wessely",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "twitter": "WesselyS",
+    "about": "About Simon.",
+    "location": "London, UK",
+    "email": "simon.wessely@kcl.ac.uk",
+    "id": "1"
+  },
+  {
+    "name": "Helen Helliwell",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "about": "About Helen.",
+    "location": "London, UK",
+    "email": "helen.helliwell636@mod.gov.uk",
+    "id": "2"
+  },
+  {
+    "name": "Nicola Fear",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "twitter": "ntfear",
+    "about": "About Nicola.",
+    "location": "London, UK",
+    "email": "nicola.t.fear@kcl.ac.uk",
+    "id": "3"
+  },
+  {
+    "name": "Carl Castro",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "twitter": "USC_CIR",
+    "about": "About Carl.",
+    "location": "London, UK",
+    "email": "cacastro@usc.edu",
+    "id": "4"
+  },
+  {
+    "name": "Ray Lock",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "twitter": "FiMTrust",
+    "about": "About Ray.",
+    "location": "London, UK",
+    "email": "xx@xx.xx",
+    "id": "5"
+  },
+  {
+    "name": "Cheri Armour",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "twitter": "ProfArmour",
+    "about": "About Cheri.",
+    "location": "Ulster, UK",
+    "email": "c.armour1@ulster.ac.uk",
+    "id": "6"
+  },
+  {
+    "name": "Dominic Murphy",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "twitter": "CombatStress",
+    "about": "About Dominic.",
+    "location": "Leatherhead, UK",
+    "email": "Dominic.Murphy@combatstress.org.uk",
+    "id": "7"
+  },
+  {
+    "name": "Peter Chiarelli",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "twitter": "XX",
+    "about": "About Peter.",
+    "location": "XX, USA",
+    "email": "peterchiarelli@me.com",
+    "id": "8"
+  },
+  {
+    "name": "Norman Jones",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "about": "About Norman.",
+    "location": "London, UK",
+    "email": "norman.jones@kcl.ac.uk",
+    "id": "9"
+  },
+  {
+    "name": "Sharon Stevelink",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "about": "About Sharon.",
+    "location": "London, UK",
+    "email": "sharon.stevelink@kcl.ac.uk",
+    "id": "10"
+  },
+  {
+    "name": "Howard Burdett",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "about": "About Howard.",
+    "location": "London, UK",
+    "email": "howard.burdett@kcl.ac.uk",
+    "id": "11"
+  },
+  {
+    "name": "Victoria Williamson",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "about": "About Vici.",
+    "location": "London, UK",
+    "email": "victoria.williamson@kcl.ac.uk",
+    "id": "12"
+  },
+  {
+    "name": "Karla Greenberg",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "about": "About Karla.",
+    "location": "London, UK",
+    "email": " kmarlow@doctors.org.uk",
+    "id": "13"
+  },
+  {
+    "name": "Neil Greenberg",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "about": "About Neil.",
+    "location": "London, UK",
+    "email": "neil.greenberg@kcl.ac.uk",
+    "id": "14"
+  }
+],
+
+  "map": [{
+    "name": "The Great Hall",
+    "lat": 51.511473,
+    "lng": -0.116029,
+    "center": true
+  }]
+}
