@@ -1,6 +1,6 @@
 # Pwned?- Public Release
 
-Pwned? An app to allow you to search to see if your email address has been compromised, powered by [Have I Been Pwned?](https://haveibeenpwned.com/).
+pwned? An app to allow you to search to see if your email address has been compromised, powered by [Have I Been Pwned?](https://haveibeenpwned.com/).
 
 ## Table of Contents
 

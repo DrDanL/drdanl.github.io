@@ -15,6 +15,8 @@ import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { AboutPage } from '../pages/about/about';
 
+declare var FirebasePlugin: any;
+
 export interface PageInterface {
   title: string;
   name: string;
@@ -104,6 +106,36 @@ export class PwnedApp {
     // Call any initial plugins when ready
     this.platform.ready().then(() => {
       this.splashScreen.hide();
+
+      if (typeof FirebasePlugin != 'undefined') {
+        FirebasePlugin.getToken(token => {
+          // save this server-side and use it to push notifications to this device
+          console.log(`Obtained token: ${token}`);
+          FirebasePlugin.subscribe('all');
+        }, error => {
+          console.error(`Error: ${error}`);
+        });
+      }
+
+      if (typeof FirebasePlugin != 'undefined') {
+        FirebasePlugin.onTokenRefresh(token => {
+          // save this server-side and use it to push notifications to this device
+          console.log(`Refreshed token: ${token}`);
+        }, function(error) {
+          console.error(`Error: ${error}`);
+        });
+      }
+
+
+      if (typeof FirebasePlugin != 'undefined') {
+        FirebasePlugin.onNotificationOpen(notification => {
+          // check notification contents and react accordingly
+          console.log(JSON.stringify(notification));
+        }, function(error) {
+          console.error(`Error: ${error}`);
+        });
+      }
+
     });
   }
 
