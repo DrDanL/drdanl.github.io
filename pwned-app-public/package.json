@@ -1,6 +1,6 @@
 {
   "name": "pwned-data-breach-app",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "An app to allow you to search to see if your email address has been compromised. Powered by Have I Been Pwned?",
   "license": "GNU-3.0",
   "author": {
@@ -46,7 +46,7 @@
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "nightly",
+    "@ionic/app-scripts": "^3.1.8",
     "typescript": "~2.3.2"
   },
   "config": {

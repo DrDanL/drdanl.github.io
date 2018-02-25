@@ -9,6 +9,7 @@ import {NavController } from 'ionic-angular';
 })
 export class PasswordsPage {
   passwordTerm = '';
+  passwordFreq = 0;
   passwordBreached = true;
   passwordSafe = true;
   pwned: any = [];
@@ -30,6 +31,7 @@ export class PasswordsPage {
     this.haveIBeenPwnedService.searchPassword(this.passwordTerm).subscribe(pwned => {
       //200 Ok — the password was found in the Pwned Passwords repository
       this.pwned = pwned;
+      this.passwordFreq = pwned._body;
       this.passwordBreached = false;
     }, (err) => {
       if (err.status == 404) {

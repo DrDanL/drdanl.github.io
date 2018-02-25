@@ -10,7 +10,7 @@ export class RatingProvider {
     private _RATE: AppRate) {
 
     this._RATE.preferences = {
-      openStoreInApp: false,
+      //openStoreInApp: false,
       displayAppName: 'Pwned?',
       usesUntilPrompt: 2,
       promptAgainForEachNewVersion: false,

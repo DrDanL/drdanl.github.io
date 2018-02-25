@@ -135,7 +135,7 @@ export class HaveIBeenPwnedService {
   };
 
   searchPassword(passwordTerm: string) {
-    var url = "https://haveibeenpwned.com/api/v2/pwnedpassword/" + passwordTerm;
+    var url = "https://api.pwnedpasswords.com/pwnedpassword/" + passwordTerm;
 
     return Observable.create(observer => {
       this.http.get(url)
