@@ -24,7 +24,7 @@ h1 {
     }
 
 h2 {
-    font-size   : 30px;
+    font-size   : 25px;
     line-height : 1.5em;
     font-weight : 400;
     }
@@ -33,23 +33,6 @@ h3 {
     font-size   : 24px;
     line-height : 1.5em;
     font-weight : 300;
-    }
-
-h4 {
-    font-size   : 18px;
-    line-height : 1.5em;
-    font-weight : 300;
-    }
-
-h5 {
-    font-size   : 16px;
-    line-height : 1.5em;
-    font-weight : 500;
-    }
-
-h6 {
-    font-size   : 15px;
-    line-height : 24px;
     }
 
 /* --------------------------------------
@@ -303,11 +286,7 @@ button:focus,
         }
     }
 
-/*-------------------
- * Jumbotron
- *-------------------*/
-
-.jumbotron {
+.kcmhrbag {
     background            : url("../img/background/img2/img2.png");
     background-size       : cover;
     padding               : 0;
@@ -322,7 +301,7 @@ button:focus,
     overflow              : hidden;
     }
 
-.jumbotron .content {
+.kcmhrbag .content {
     color             : #ffffff;
     position          : absolute;
     top               : 50%;
@@ -337,36 +316,36 @@ button:focus,
     -moz-transform    : translateY(-50%);
     }
 
-.jumbotron .content h1 {
+.kcmhrbag .content h1 {
     color       : #ffffff;
     font-weight : bold;
     }
 
-.jumbotron .content p.lead {
+.kcmhrbag .content p.lead {
     font-size   : 24px;
     line-height : 1.5em;
     color       : rgba(255, 255, 255, .7);
     }
 
-.jumbotron .content .event-date {
+.kcmhrbag .content .event-date {
     font-size     : 24px;
     margin-bottom : 40px;
     }
 
-.jumbotron .btn {
+.kcmhrbag .btn {
     margin-top : 40px;
     }
 
 @media (max-width : 600px) {
-    .jumbotron .content {
+    .kcmhrbag .content {
         min-height : auto;
         }
 
-    .jumbotron .content h1 {
+    .kcmhrbag .content h1 {
         font-size : 26px;
         }
 
-    .jumbotron .content p.lead {
+    .kcmhrbag .content p.lead {
         font-size : 15px;
         }
     }
@@ -433,6 +412,7 @@ button:focus,
 
 .team .thumbnail img {
     width : 100%;
+    border-radius: 50%;
     }
 
 .team .thumbnail .caption {
@@ -481,29 +461,29 @@ button:focus,
 /* --------------------------
  * Agenda
  *---------------------------*/
-.section-ajenda .session {
+.section-agenda .session {
     padding       : 15px 0;
     border-left   : 1px solid #eeeeee;
-    margin-bottom : 40px;
+    margin-bottom : 35px;
     }
 
-.section-ajenda .session time {
+.section-agenda .session time {
     padding       : 5px 25px 15px;
     border-bottom : 1px solid #eeeeee;
     display       : inline-block;
     }
 
-.section-ajenda .session h2 {
+.section-agenda .session h2 {
     margin : 20px 0 0 20px;
     }
 
-.section-ajenda .session h3 {
+.section-agenda .session h3 {
     margin         : 20px 0 20px 20px;
-    font-size      : 20px;
+    font-size      : 17px;
     text-transform : uppercase;
     }
 
-.section-ajenda .session h3 span {
+.section-agenda .session h3 span {
     font-size   : 14px;
     display     : block;
     line-height : 1;
